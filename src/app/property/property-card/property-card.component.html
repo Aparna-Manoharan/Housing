@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-img-wrapper">
+  <img *ngIf="property.Image" class="propImg" src="assets/images/{{property.Image}}.png">
+  <img *ngIf="!property.Image" class="propImg" src="assets/images/house-default.jpg">
+  <ul class="list-inline text-center member-icons animate">
+    <li class="list-inline-item">
+      <button class="btn btn-primary" routerLink="/property-detail/{{property.Id}}"><i class="far fa-edit"></i></button>
+    </li>
+    <li class="list-inline-item">
+      <button class="btn btn-primary"><i class="far fa-address-book"></i></button>
+    </li>
+  </ul>
+  </div>
+
+  <div class="card-body">
+    <h1>{{property.Name}}</h1>
+    <h1>{{property.PType}}</h1>
+    <h1>{{property.Price}}</h1>
+  </div>
+</div>

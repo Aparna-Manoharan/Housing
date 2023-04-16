@@ -1,5 +1,9 @@
+
 .card {
   min-height: 400px;
+}
+.img-wrapper{
+  overflow: hidden;
 }
 
 .card-body h1 {
